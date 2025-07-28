@@ -1,59 +1,63 @@
-# PaperRockScissor
+# Angular Rock, Paper, Scissors ✊📄✂️
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.8.
+This is a simple Angular 19 project that demonstrates event-driven gameplay, state management, conditional rendering, and image-based interaction using a classic **Rock, Paper, Scissors** game.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🔧 What I Built
+
+I developed a standalone `GameComponent` that enables users to play **Rock, Paper, Scissors** against a computer opponent using:
+
+- Angular CLI 19.1.8  
+- Standalone components  
+- Button click interactions  
+- Conditional logic and DOM updates  
+- SVG/IMG-based user interface  
+- Clean HTML + SCSS styling
+
+---
+
+## 💡 Key Features
+
+- Three selectable options: Rock, Paper, Scissors  
+- Computer randomly picks its own choice  
+- Winner determined based on classic game logic  
+- Displays results with matching images for both players  
+- Fully responsive and interactive layout  
+
+---
+
+## 🧱 Technologies Used
+
+- Angular 19 (with standalone component architecture)  
+- TypeScript for game logic  
+- HTML & SCSS for structure and styling  
+- Conditional rendering with `*ngIf`  
+- Event binding with `(click)`  
+- Dynamic image loading via property binding
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+└── app/
+└── game/
+├── game.component.ts # Contains the game logic and state
+├── game.component.html # Interactive UI with buttons and results
+├── game.component.scss # Styling for layout and visuals
+
+```
+
+## 🚀 Running the Project
+
+Make sure Angular CLI is installed:
 
 ```bash
+npm install -g @angular/cli
+
+npm install
+
 ng serve
 ```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
